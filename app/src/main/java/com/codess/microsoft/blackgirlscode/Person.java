@@ -17,9 +17,9 @@ public class Person {
 
     private final int shortLength = 100;
 
-    public Person(UUID uuid)
+    public Person()
     {
-
+        this.mUUID = UUID.randomUUID();
     }
 
     public Date getJoinDate()
