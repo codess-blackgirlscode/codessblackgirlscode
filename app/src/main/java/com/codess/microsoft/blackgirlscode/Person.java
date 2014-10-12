@@ -44,7 +44,7 @@ public class Person {
 
     public Integer getAge() { return age; }
 
-    public void setAge(Integer name)
+    public void setAge(Integer age)
     {
         this.age = age;
     }

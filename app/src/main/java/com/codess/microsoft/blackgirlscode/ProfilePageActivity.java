@@ -16,7 +16,7 @@ import java.util.UUID;
 public class ProfilePageActivity extends Activity {
 
 
-    HashMap<Integer,Person> people = DataGenerator.makePeople();
+    HashMap<UUID,Person> people = DataGenerator.makePeople();
     ImageView profilePic;
     TextView name;
     TextView age;

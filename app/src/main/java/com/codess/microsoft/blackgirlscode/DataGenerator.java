@@ -40,7 +40,7 @@ public class DataGenerator {
         String[] hobbies = {"swimming, running", "camping, hunting", "skiing, snowboarding", "sleeping, eating", "traveling, dancing"};
         String[] goals = {"Build an Android app", "Build a web app", "Build something to help the Red Cross", "Learn backend development", "Learn data science"};
 
-        for (int i = 0; i <= 5; i++) {
+        for (int i = 0; i < 5; i++) {
             Person person = new Person();
             person.setName(names[i]);
             person.setAge(ages[i]);
