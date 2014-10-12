@@ -7,9 +7,9 @@ import java.util.UUID;
 public class DataGenerator {
 
     private static ArrayList<Person> peopleList = new ArrayList<Person>();
-    private static HashMap<Integer, Person> people = new HashMap<Integer, Person>();
+    private static HashMap<UUID, Person> people = new HashMap<UUID, Person>();
 
-    public static HashMap<Integer, Person> makePeople()
+    public static HashMap<UUID, Person> makePeople()
     {
         if (!people.isEmpty())
         {
@@ -18,7 +18,7 @@ public class DataGenerator {
 
         if (peopleList.isEmpty())
         {
-            peopleList = createPeopleList();
+            createPeopleList();
         }
 
         for(int i = 0; i < peopleList.size(); i++)
@@ -40,9 +40,9 @@ public class DataGenerator {
         String[] hobbies = {"swimming, running", "camping, hunting", "skiing, snowboarding", "sleeping, eating", "traveling, dancing"};
         String[] goals = {"Build an Android app", "Build a web app", "Build something to help the Red Cross", "Learn backend development", "Learn data science"};
 
-        for (int i = 0; i < 5; i++) {
+        for (int i = 0; i <= 5; i++) {
             Person person = new Person();
-            person.setId(i);
+            person.setAge((int)(Math.random() * 50 + 1));
             person.setName(names[i]);
             person.setAge(ages[i]);
             person.setLanguages(languages[i]);
