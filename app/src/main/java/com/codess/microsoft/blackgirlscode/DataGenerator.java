@@ -18,7 +18,7 @@ public class DataGenerator {
 
         if (peopleList.isEmpty())
         {
-            createPeopleList();
+            peopleList = createPeopleList();
         }
 
         for(int i = 0; i < peopleList.size(); i++)
@@ -42,7 +42,6 @@ public class DataGenerator {
 
         for (int i = 0; i <= 5; i++) {
             Person person = new Person();
-            person.setAge((int)(Math.random() * 50 + 1));
             person.setName(names[i]);
             person.setAge(ages[i]);
             person.setLanguages(languages[i]);
